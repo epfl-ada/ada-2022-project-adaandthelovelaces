@@ -39,7 +39,7 @@ Finally, a case study is conducted as an example of poor link positioning. We wi
 	For each article and for each outgoing links on the article: 
 	- Calculate y-position of the link inside the HTML page, using the **Selenium** Python library
 	
-	- Determine the section in which the link is located, using XXX
+	- Determine the section in which the link is located, using the same library
 	
 	- Store the results in the extended table _links_
 	
@@ -57,13 +57,13 @@ For each article and for each outgoing links:
 Heatmaps are used to highlight the links density, high CTR regions, players' choices.
 For the Milestone3, additional data visualization tools will be used to better communicate the results.
 ### Matched studies 
-Pair up articles/links based on observed covariates to draw valid conclusions from data. Initial exploration of observed covariates has been conducted in the following PDF:  
+Pair up articles/links based on observed covariates to draw valid conclusions from data. Initial exploration of observed covariates has been conducted in the following PDF: [here](/obs_data_P2.pdf)
 ### Data analysis
-Investigate causation between the position of the link and its clickthrough rate, case study and draw conclusions. Propose a
-guidline on how links should be used in Wikipedia. 
+Investigate causation between the position of the link and its clickthrough rate (CTR), case study and draw conclusions. 
+Propose a guideline on how links should be used in Wikipedia. 
 ## Proposed timeline
 
-- First two weeks : Data modeling, matching data
+- First two weeks : Preprocess, matching, modeling data
 - Third week : Correlate, investigate causation, case study
 - Last two weeks : Create data story, visualizations and draw conclusions
 
@@ -74,9 +74,9 @@ guidline on how links should be used in Wikipedia.
 - Notion is the software used for project follow up
 
 ### Split of Work
-- Hugo:
-- Nils:
-- Nadia:
-- Brehim:
+- Hugo: TBD
+- Nils: TBD
+- Nadia: TBD
+- Brehim: TBD
 
 _Note that this is subject to change._
