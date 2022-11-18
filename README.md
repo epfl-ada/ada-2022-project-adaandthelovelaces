@@ -164,7 +164,7 @@ Propose a guideline on how links should be used in Wikipedia.
 
 - Notion is the software used for project follow up
 
-### Questions for TAs
+## Questions for TAs
 
 - Some links may appear more than once in an article. In this case, how to deal with duplicated links? We propose three solutions:
 	- Drop duplicated links. In this case, we lose a significant amount of information because the number of duplicated links is not negligeable.
