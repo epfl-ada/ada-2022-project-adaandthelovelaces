@@ -2,7 +2,7 @@
 _Prepared by Nils Hasselmark, Hugo Parent-Leduc, Nadia Hadjmbarek and Brahim Rejeb in the context the course CS-401 Applied Data Analytics given in 2022 by Robert West at École Polytechnique Fédérale de Lausanne (ÉPFL), Switzerland._
 
 ## Abstract
-In website design, the layout of outgoing links within a webpage has major impacts on the user’s behavior. UI designers are fully aware of that, and try as much as possible to  track the user's journey both internally, with tagging plans, and externally, with third party cookies. The project aims to study the specific impact of the location of the outgoing link inside a wikipedia article: 
+In website design, the layout of outgoing links within a webpage has major impacts on the user’s behavior. UI designers are fully aware of that, and try as much as possible to  track the user's journey both internally, with tagging plans, and externally, with third party cookies. The project aims to study the specific impact of the location of the outgoing link inside a webpage: 
 
 > _**To what extent does the position of the link within an article have an effect on how often it gets clicked?**_
 
@@ -19,7 +19,7 @@ Research questions our project aims to answer include:
 -  _Does the section in which a link is located influence the CTR?_
 
 -   _Is there a relationship between the success or failure of a path with the locations of the links clicked?_
-	In the context of the Wikispeedia game, that would mean: _are lazy players who only click on the top links has worse performance?_
+	In the context of the Wikispeedia game, that would mean: _are lazy players who only click on the top links doing a worse score in average?_
 
 - _What is the average position of the links in the shortest paths compared to the average position of the links in the player's paths?_
 
@@ -30,8 +30,6 @@ This tackles two different problems and the analysis will return different resul
 - The global vision helps understanding if we simply need to put the links going to a given page at the top if we want to increase overall clicks (no matter their source).
 
 - The local vision helps to understand if, for a given page, we want to increase traffic toward a specific article, it helps to put the link on top or not.
-
-Finally, a case study is conducted as an example of poor link positioning. We will limit the view of players in the Wikispeedia game and asses their performances (The player only uses links in a limited view).
 
 ### Data pre-processing
 
@@ -55,19 +53,24 @@ For each article and for each outgoing links:
 
 ### Data modeling
 Linear regression will be run at the two levels of granularity.
+
 ### Data visualization
-Heatmaps are used to highlight the links density, high CTR regions, players' choices.
-For the Milestone3, additional data visualization tools will be used to better communicate the results.
-### Matched studies 
-Pair up treated/control based on observed covariates to draw valid conclusions from data.  
-### Data analysis
-Investigate causation between the position of the link and its clickthrough rate, case study and draw conclusions. Propose a
-guidline on how links should be used in Wikipedia. 
+XXX
+
+
 ## Proposed timeline
 
-- First two weeks : Data modeling, matching data
-- Third week : Correlate, investigate causation, case study
-- Last two weeks : Create data story, visualizations and draw conclusions
+
+Date 1
+: xxx
+
+Date 2
+: yyy
+
+Date 3
+: zzz
+
+
 
 
 ## Organization within the team
