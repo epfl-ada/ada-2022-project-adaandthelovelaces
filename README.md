@@ -39,6 +39,11 @@ Research questions our project aims to answer include:
 
 -  _What is the answer to all of these questions for the optimal paths? And how does it differ from a human path strategy?_
 
+## Additional datasets
+
+Up till now, we did not see the need of additional datasets to perform the analysis.
+
+
 ## Methodology
 
 The main idea is to conduct an analysis at two levels. We plan to compare both globally and locally the influence of the factors on CTR and clicks. For example, by globally, we mean that we want to investigate whether the links with highest CTR are the ones which appear in average on top of the articles. By locally, it means that we will conduct this analysis at the scale of each source article, to have a higher precision.
@@ -158,5 +163,12 @@ Propose a guideline on how links should be used in Wikipedia.
 - Team meetings are organized at least on a weekly basis. At each meeting, everyone discusses his progresses & difficulties, and the next steps are decided
 
 - Notion is the software used for project follow up
+
+### Questions for TAs
+
+- Some links may appear more than once in an article. In this case, how to deal with duplicated links? We propose three solutions:
+	- Drop duplicated links. In this case, we lose a significant amount of information because the number of duplicated links is not negligeable.
+	- Consider only the first appearence of the link
+	- Average all its positions 
 
   
