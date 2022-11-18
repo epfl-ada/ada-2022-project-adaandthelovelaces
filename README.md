@@ -1,12 +1,12 @@
-# Location of Outgoing Links on Webpages — Does it Impact on Navigation of Informational Content?
-_Prepared by Nils Hasselmark, Hugo Parent-Leduc, Nadia Hadjmbarek and Brahim Rejeb in the context the course CS-401 Applied Data Analytics given in 2022 by Robert West at École Polytechnique Fédérale de Lausanne (ÉPFL), Switzerland._
+# Positioning of Outgoing Links on Wikipedia articles — Does it Impact the Navigability?
+_Prepared by Nils Hasselmark, Hugo Parent-Leduc, Nadia Hadjmbarek and Brahim Rejeb in the context the course CS-401 Applied Data Analysis given in 2022 by Robert West at École Polytechnique Fédérale de Lausanne (EPFL), Switzerland._
 
 ## Abstract
 In website design, the layout of outgoing links within a webpage has major impacts on the user’s behavior. UI designers are fully aware of that, and try as much as possible to  track the user's journey both internally, with tagging plans, and externally, with third party cookies. The project aims to study the specific impact of the location of the outgoing link inside a wikipedia article: 
 
 > _**To what extent does the position of the link within an article have an effect on how often it gets clicked?**_
 
-We investigate wether users always take the time to go through the whole article, cataloging all the links before finally choosing the one they think will bring them closer to their objective.
+We investigate whether users always take the time to go through the whole article, cataloging all the links before finally choosing the one they think will bring them closer to their objective.
 
 The premise of this line of questioning is **to evaluate whether there is a correlation between the position of the link on a page and its clickthrough rate**. 
 
@@ -24,7 +24,7 @@ Research questions our project aims to answer include:
 - _What is the average position of the links in the shortest paths compared to the average position of the links in the player's paths?_
 
 ## Methodology
-The main idea is to conduct an analysis at two levels. We plan to compare both globally and locally the influence of the link positions on the CTR. By globally, we mean that we want to investigate wether the links with highest CTR are the ones which appear in average on top of the articles. By locally, it means that we will conduct this analysis at the scale of each source article, to have a higher precision. 
+The main idea is to conduct an analysis at two levels. We plan to compare both globally and locally the influence of the link positions on the CTR. By globally, we mean that we want to investigate whether the links with highest CTR are the ones which appear in average on top of the articles. By locally, it means that we will conduct this analysis at the scale of each source article, to have a higher precision. 
 
 This tackles two different problems and the analysis will return different results and variances:
 - The global vision helps understanding if we simply need to put the links going to a given page at the top if we want to increase overall clicks (no matter their source).
@@ -37,13 +37,13 @@ Finally, a case study is conducted as an example of poor link positioning. We wi
 
 -  **Dataset wpcd:**
 	For each article and for each outgoing links on the article: 
-	- Calculate y-position of the link inside the HTML page, using XXX library
+	- Calculate y-position of the link inside the HTML page, using the **Selenium** Python library
 	
 	- Determine the section in which the link is located, using XXX
 	
 	- Store the results in the extended table _links_
 	
-	- For each destination article, compute the average location of all the links going to this article. Results are stored in the extended _articles_ table.
+	- For each destination article, compute the average location of all the links going to this article. Results are stored in the extended _articles_ table
 
 - **Dataset paths_finished and paths_unfinished:**
 For each article and for each outgoing links:
@@ -53,13 +53,11 @@ For each article and for each outgoing links:
 	
 	- For both cases, compute the CTR as the number of clicks divided by the number of impressions.
 
-### Data modeling
-Linear regression will be run at the two levels of granularity.
 ### Data visualization
 Heatmaps are used to highlight the links density, high CTR regions, players' choices.
 For the Milestone3, additional data visualization tools will be used to better communicate the results.
 ### Matched studies 
-Pair up treated/control based on observed covariates to draw valid conclusions from data.  
+Pair up articles/links based on observed covariates to draw valid conclusions from data. Initial exploration of observed covariates has been conducted in the following PDF:  
 ### Data analysis
 Investigate causation between the position of the link and its clickthrough rate, case study and draw conclusions. Propose a
 guidline on how links should be used in Wikipedia. 
