@@ -146,11 +146,11 @@ Propose a guideline on how links should be used in Wikipedia.
 
 - Nils: Wikispeedia network exploration through graphs, Data distribution analysis, Data story
 
-- Brahim: Textual semantic similarity, data visualization, linear regression, Data story
+- Brahim: Semantic textual similarity, Data visualization, Data story
 
 - Hugo: Data pre-processing, CTR computation, Data story
 
-- Nadia: Link position and article length computation, observational study and matching, Data story
+- Nadia: Link position and article length computation, Observational study and matching, Data story
 ### Project Management
 
 - Team meetings are organized at least on a weekly basis. At each meeting, everyone discusses his progresses & difficulties, and the next steps are decided
