@@ -136,11 +136,11 @@ Propose a guideline on how links should be used in Wikipedia.
 
 ## Organization within the team
 
-- Nils: Wikispeedia network exploration, Data distribution analysis and visualizations, website development, Data story
+- Nils: Wikispeedia network exploration, Data distribution analysis and visualizations, Website development, Data story
 
 - Brahim: Semantic textual similarity, Website development, Data story
 
-- Hugo: Data pre-processing, CTR computation, Data story
+- Hugo: Data pre-processing, CTR computation, Website development, Data story
 
 - Nadia: Link position and article length computation, Observational study and matching, Data story
 ## Project Management
