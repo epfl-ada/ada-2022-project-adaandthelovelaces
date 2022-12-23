@@ -22,26 +22,21 @@ We investigate whether users always take the time to go through the whole articl
 
 Research questions our project aims to answer include:
 
+-  _How to best represent the popularity of a link?_
+
 -  _Does the position of the link on the page influence the click through rate (CTR)?_
 
 	- If so, is it possible to quantify this influence?
 
--  _Does the section in which a link is located influence the CTR?_
 
-  
+-  _Do players prefer to target articles covering a general topic or a very specific one?_
 
--  _Is there a relationship between the success or failure of a path with the locations of the links clicked?_
-	In the context of the Wikispeedia game, that would mean: _are lazy players who only click on the top links has worse performance?_
+ - _Do players prefer to target long or short articles?_
 
--  _Are the most popular articles the ones which have the most ingoing or outgoing links? In other words, do players prefer to target articles covering a general topic or a very specific one?_
-
- - _Do players prefer to target long  or short articles?_
-
--  _What is the answer to all of these questions for the optimal paths? And how does it differ from a human path strategy?_
 
 ## Additional datasets
 
-Up till now, we did not see the need of additional datasets to perform the analysis.
+No additional datasets were used to perform the analysis.
 
 
 ## Methodology
@@ -60,12 +55,6 @@ The factors of interest are:
 - the **indegree** of the destination article: we might expect that the most popular articles are the ones which have the higher number of links pointing toward them. By adding this variable in our analysis, we remove a source of bias for the analysis of the other features.
 
   
-
-
-  
-
-Finally, a case study is conducted as an example of poor link layout. We will limit the view of players in the Wikispeedia game and asses their performances (The player only uses links in a limited view).
-
   
 
 ### Data pre-processing
@@ -82,17 +71,13 @@ For each article, compute its ingoing and outgoing degree: the number of links g
 
 For each article and for each outgoing links on the article:
 
-- Calculate y-position of the link inside the HTML page, using the **Selenium** Python library. (in progress)
+- Calculate y-position of the link inside the HTML page, using the **Selenium** Python library. 
 
-- Determine the section in which the link is located, using the same library. (to do)
+- For each destination article, compute the average location of all the links going to this article. 
 
-- Store the results in the extended table _links_. (in progress)
+- For each article, compute their degree and the content size (length).
 
-- For each destination article, compute the average location of all the links going to this article. (to do)
-
-- For each article, compute their degree and the content size. (to do)
-
-- Results are stored in the extended _articles_ table. (to do)
+- Calculate the textual semantic similarity between each article and the links that it contains.
 
   
   
@@ -105,11 +90,11 @@ For each article and for each outgoing links:
 
   
 
-- Calculate the number of clicks and impressions on links at the section level, allowing to see for each section, how many clicks have been generated. (to do)
+- Calculate the number of clicks and impressions on links at the section level, allowing to see for each section, how many clicks have been generated. 
 
-- Calculate the number of clicks and impressions of the links at the global level, allowing to see which articles are the most popular overall. Results are stored in the extended _articles_ table. (in progress)
+- Calculate the number of clicks and impressions of the links at the global level, allowing to see which articles are the most popular overall. Results are stored in the extended _articles_ table. 
 
-- For all cases, compute the CTR as the number of clicks divided by the number of impressions. (to do)
+- For all cases, compute the CTR as the number of clicks divided by the number of impressions. 
 
   
 
@@ -117,11 +102,12 @@ For each article and for each outgoing links:
 
 Heatmaps are used to highlight the links density, high CTR regions, players' choices.
 
-For the Milestone3, additional data visualization tools will be used to better communicate the results.
+Histogram plots are used to highlight the distribution of the source articles features: length and semantic similarity score.
 
 ### Matched studies
 
 Pair up articles/links based on observed covariates to draw valid conclusions from data. Initial exploration of observed covariates has been conducted in the following PDF: [here](/obs_data_P2.pdf)
+
 
 ### Data analysis
 
@@ -129,15 +115,14 @@ Pair up articles/links based on observed covariates to draw valid conclusions fr
 
 Understand the way players choose the links they click:
 
-- Investigate causation between the position of the link and its clickthrough rate (CTR), case study and draw conclusions. (In progress)
+- Investigate causation between the position of the link and its clickthrough rate (CTR), case study and draw conclusions. 
 
-- Investigate the most popular sections containing the most clicked links. (To do)
+- Investigate the most popular sections containing the most clicked links. 
 
 - Investigate whether the most popular articles are the ones with the highest degrees, or not. This will make us understand if players use a strategy to target very broad articles, or very specific ones. (To do)
 
-- Conduct the same analysis but using the computer optimal paths, to see how human player's strategy differ (To do)
 
-- Conduct regression analyis on all factors to determine what most influences the clicks and CTR
+- Conduct regression analysis on all factors to determine what most influences the clicks and CTR
 
   
 
@@ -156,19 +141,20 @@ Propose a guideline on how links should be used in Wikipedia.
   
   
 
-## Organization within the team
+### Organization within the team
 
+- Nils: Wikispeedia network exploration through graphs, Data distribution analysis, Data story
+
+- Brahim: Textual semantic similarity, data visualization, linear regression, Data story
+
+- Hugo: Data pre-processing, CTR computation, Data story
+
+- Nadia: Link position and article length computation, observational study and matching, Data story
 ### Project Management
 
 - Team meetings are organized at least on a weekly basis. At each meeting, everyone discusses his progresses & difficulties, and the next steps are decided
 
 - Notion is the software used for project follow up
 
-## Questions for TAs
-
-- Some links may appear more than once in an article. In this case, how to deal with duplicated links? We propose three solutions:
-	- Drop duplicated links. In this case, we lose a significant amount of information because the number of duplicated links is not negligeable.
-	- Consider only the first appearence of the link
-	- Average all its positions 
 
   
