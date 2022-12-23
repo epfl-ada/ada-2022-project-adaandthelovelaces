@@ -63,7 +63,7 @@ The factors of interest are:
 
 **Dataset links.tsv:**
 
-For each article, compute its ingoing and outgoing degree: the number of links going to the article, or the number of links present in the article. (To do)
+For each article, compute its ingoing and outgoing degree: the number of links going to the article, or the number of links present in the article.
 
   
 
@@ -77,7 +77,7 @@ For each article and for each outgoing links on the article:
 
 - For each article, compute their degree and the content size (length).
 
-- Calculate the textual semantic similarity between each article and the links that it contains.
+- Calculate the semantic textual similarity between each article and the links that it contains.
 
   
   
@@ -88,7 +88,6 @@ For each article and for each outgoing links:
 
 - Calculate the number of clicks and impressions of the links at a page level, allowing to see from each page, which links are the most clicked on. Store the results in the extended _links_ table. (in progress)
 
-  
 
 - Calculate the number of clicks and impressions on links at the section level, allowing to see for each section, how many clicks have been generated. 
 
@@ -107,6 +106,8 @@ Histogram plots are used to highlight the distribution of the source articles fe
 ### Matched studies
 
 Pair up articles/links based on observed covariates to draw valid conclusions from data. Initial exploration of observed covariates has been conducted in the following PDF: [here](/obs_data_P2.pdf)
+
+From milestone P2, major modifications were brought. Advanced exploration of observed covariates has been exposed in the followng PDF: [here](/obs_data_P3.pdf)
 
 
 ### Data analysis
